@@ -1,0 +1,223 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header__container {
+    display: flex;
+    width: 1440px;
+    margin: auto;
+    padding: 104px 133px 168px 133px;
+    background-color: #F8F8F8;
+}
+
+.header__title {
+    font-size: 24px;
+    line-height: 45px;
+    margin-bottom: 53px;
+    color: #161515;
+}
+
+.header__subtitle {
+    font-size: 250px;
+    line-height: 230px;
+    color: #272727;
+    margin-bottom: 43px;
+}
+
+.header__discription {
+    font-size: 32px;
+    line-height: 50px;
+    width: 575px;
+    margin-bottom: 61px;
+}
+
+.buy__wrapper {
+    display: flex;
+}
+
+.buy__link {
+    display: block;
+    width: 278px;
+    height: 82px;
+    font-size: 32px;
+    line-height: 82px;
+    color: #FFFFFF;
+    background-color: #161515;
+    text-decoration: none;
+    text-align: center;
+}
+
+.price {
+    width: 143px;
+    height: 82px;
+    font-size: 32px;
+    line-height: 82px;
+    color: #272727;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.header__img {
+    display: block;
+    margin-left: 35px;
+    margin-top: -104px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 530px;
+}
+
+.popular__title {
+    text-align: center;
+    margin-top: 43px;
+    font-size: 24px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.models__title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 81px;
+    margin-bottom: 84px;
+}
+
+.card__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__watch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img__son22 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 417px;
+    height: 630px;
+    margin-bottom: 67px;
+    background-color: #F8F8F8;
+}
+
+.img__son22 img {
+    width: 286px;
+    height: 410px;
+}
+
+.img__sw12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 630px;
+    margin-top: 85px;
+    margin-bottom: 67px;
+    background-color: #F8F8F8;
+}
+
+.img__sw12 img {
+    width: 500px;
+    height: 500px;
+}
+
+.card__name {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 17px 67px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.card__description {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 50px;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__name {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 60px;
+    margin-top: 60px;
+    margin-bottom: 58px;
+    color: #161515; 
+    position: relative;
+}
+
+.footer__name::after {
+    content: "";
+    display: block;
+    height: 1px;
+    border: 1px solid #bbbbbb;
+    width: 178px;
+    top: 100%;
+    left: 37px;
+    position: absolute;
+}
+
+.footer__discription {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 142px;
+    color: #161515;
+}
+
+.footer__discription a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #BB8B5D;
+}
