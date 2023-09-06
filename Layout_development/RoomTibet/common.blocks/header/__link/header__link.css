@@ -1,0 +1,7 @@
+.header__link {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 831px;
+    width: 100%;
+}

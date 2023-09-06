@@ -1,0 +1,12 @@
+.nav__link_button-theme_header {
+    border-radius: 4px;
+    background: #1A3E3E;
+
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.192px;
+
+    padding: 12px 24px;
+
+    margin-left: 49px;
+}
