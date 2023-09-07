@@ -20,10 +20,22 @@
     <!-- Container -->
     <link rel="stylesheet" href="common.blocks/container/container.css">
     <link rel="stylesheet" href="common.blocks/container/_flex/container_flex_colum.css">
+    <!-- Form.blocks --> <!-- Form -->
+    <link rel="stylesheet" href="common.blocks/form.blocks/form/form.css">
+    <link rel="stylesheet" href="common.blocks/form.blocks/form/__container/form__container.css">
+    <link rel="stylesheet" href="common.blocks/form.blocks/form/__inner/form__inner.css">
+    <link rel="stylesheet" href="common.blocks/form.blocks/form/_margin/form_margin_bottom.css">
+    <!-- Form-el -->
+    <link rel="stylesheet" href="common.blocks/form.blocks/form-el/form-el.css">
+    <link rel="stylesheet" href="common.blocks/form.blocks/form-el/_theme/form-el_theme_select.css">
+    <link rel="stylesheet" href="common.blocks/form.blocks/form-el/__option/form-el__option.css">
+    <!-- Form-label -->
+    <link rel="stylesheet" href="common.blocks/form.blocks/form-label/form-label.css">
+    <link rel="stylesheet" href="common.blocks/form.blocks/form-label/_margin/form-label_margin_top.css">
     <!-- Header -->
     <link rel="stylesheet" href="common.blocks/header/header.css">
     <link rel="stylesheet" href="common.blocks/header/__link/header__link.css">
-    <link rel="stylesheet" href="common.blocks/header/_margin/header_margin_top-16px.css">
+    <link rel="stylesheet" href="common.blocks/header/_margin/header_margin_top.css">
     <!-- Logo -->
     <link rel="stylesheet" href="common.blocks/logo/logo.css">
     <link rel="stylesheet" href="common.blocks/logo/__img/logo__img.css">
@@ -34,6 +46,9 @@
     <!-- Section -->
     <link rel="stylesheet" href="common.blocks/section/section.css">
     <link rel="stylesheet" href="common.blocks/section/_background/section_background_intro.css">
+    <!-- Title.blocks -->
+    <link rel="stylesheet" href="common.blocks/title.blocks/title-h1/title-h1.css">
+    <link rel="stylesheet" href="common.blocks/title.blocks/title-h3/title-h3.css">
     <!-- Reset -->
     <link rel="stylesheet" href="common.blocks/reset.css">
 
@@ -43,7 +58,7 @@
     <section class="section section_background_intro">
         <div class="container container_flex_colum-space-b">
 
-            <!-- Шапка сайта -->
+            <!--? Шапка сайта -->
             <header class="header header_margin_top-16px">
                 <!-- Логотип -->
                 <div class="logo">
@@ -63,16 +78,58 @@
                 </div>
             </header>
 
-            <!-- Форма заполнения для похода -->
-            <div class="common-form">
-                <h1 class="title-h1">Насладись прогулкой в горах
-                    с командой единомышленников
-                </h1>
-                <form action="" class="form"></form>
-            </div>
+            <!--? Форма заполнения для похода -->
+            <h1 class="title-h1">Насладись прогулкой в горах<br> с командой единомышленников</h1>
+            <!-- Форма -->
+            <form action="" class="form form_margin_bottom-82px" id="form" name="form">
+                <div class="form__container">
+                    <div class="form__inner">
+                        <!-- Выбор локаций для тура -->
+                        <select form="form" name="select-location" id="select-location" required class="form-el form-el_theme_select-1">
+                            <option class="form-el__option" value="" selected>Локация для тура</option>
+                            <option class="form-el__option" value="">Альпы (Европа)</option>
+                            <option class="form-el__option" value="">Рокки (США и Канада)</option>
+                            <option class="form-el__option" value="">Патагония (Южная Америка)</option>
+                            <option class="form-el__option" value="">Гималаи (Азия)</option>
+                            <option class="form-el__option" value="">Новая Зеландия</option>
+                            <option class="form-el__option" value="">Долина Доломитов (Италия)</option>
+                            <option class="form-el__option" value="">Банф (Канада)</option>
+                            <option class="form-el__option" value="">Тибет (Китай)</option>
+                        </select>
+                        <label class="form-label form-label_margin_top-8px">выберите из списка</label>
+                    </div>
+                    <!-- Дата похода -->
+                    <div class="form__inner">
+                        <input name="date-travel" type="date" id="date-travel" required class="form-el">
+                        <label class="form-label form-label_margin_top-8px">укажите диапазон</label>
+                    </div>
+                    <!-- Участники тура -->
+                    <div class="form__inner">
+                        <select form="form" name="select-participants" id="select-participants" required class="form-el form-el_theme_select-1">
+                            <option class="form-el__option" value="" selected>Участники</option>
+                            <option class="form-el__option" value="">Иван Иванов</option>
+                            <option class="form-el__option" value="">Мария Петрова</option>
+                            <option class="form-el__option" value="">Александр Смирнов</option>
+                            <option class="form-el__option" value="">Екатерина Козлова</option>
+                            <option class="form-el__option" value="">Дмитрий Федоров</option>
+                            <option class="form-el__option" value="">Ольга Морозова</option>
+                            <option class="form-el__option" value="">Андрей Попов</option>
+                            <option class="form-el__option" value="">Наталья Васильева</option>
+                            <option class="form-el__option" value="">Сергей Новиков</option>
+                            <option class="form-el__option" value="">Анна Соколова</option>
+                        </select>
+                        <label class="form-label form-label_margin_top-8px">минимум 4 человека</label>
+                    </div>
+                    <!-- Кнопка отправки данных -->
+                    <button type="submit" class="button button_theme_white-1">Найти программу</button>
+                </div> <!-- form__container -->
+            </form>
 
         </div> <!-- container -->
     </section> <!-- section -->
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 </body>
 
 </html>

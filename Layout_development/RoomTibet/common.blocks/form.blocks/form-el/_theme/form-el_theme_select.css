@@ -1,0 +1,16 @@
+.form-el_theme_select-1 {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../../../../assets/img/icons/ep_arrow-down-form-el-white.svg);
+    background-repeat: no-repeat;
+    background-position: right 13px center;
+    cursor: pointer;
+    text-overflow: ellipsis;
+
+    padding-right: 38px;
+}
+
+.form-el_theme_select-1:hover {
+    background-image: url(../../../../assets/img/icons/ep_arrow-down-form-el-yellow.svg);
+}

@@ -1,0 +1,28 @@
+.form-el {
+    /* max-width: 270px; */
+    width: 270px;
+    height: 52px;
+
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+
+    background-color: rgba(255, 255, 255, 0);
+    color: #FDFDFD;
+    border-radius: 8px;
+    border: 1px solid #E1E3E4;
+    transition: color .1s ease-out, border .1s ease-out, background-image .1s ease-out;
+
+    padding: 0 16px;
+}
+
+.form-el:focus {
+    outline: none;
+}
+
+.form-el:hover {
+    border: #F2BE22 1px solid;
+    color: #F2BE22;
+}

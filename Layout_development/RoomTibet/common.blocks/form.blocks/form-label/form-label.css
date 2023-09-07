@@ -1,0 +1,12 @@
+.form-label {
+    color: #FDFDFD;
+
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+    max-width: 254px;
+    width: 100%;
+}

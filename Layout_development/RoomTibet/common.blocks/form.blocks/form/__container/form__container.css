@@ -1,0 +1,13 @@
+.form__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1095px;
+    width: 100%;
+    height: 81px;
+}
+
+.form__container .button {
+    align-self: flex-start;
+}
