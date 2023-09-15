@@ -1,3 +1,5 @@
 .video__el {
     max-width: 1500px;
+    
+    cursor: pointer;
 }

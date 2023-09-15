@@ -80,6 +80,7 @@
     <link rel="stylesheet" href="common.blocks/video/video.css">
     <link rel="stylesheet" href="common.blocks/video/__content/video__content.css">
     <link rel="stylesheet" href="common.blocks/video/__el/video__el.css">
+    <link rel="stylesheet" href="common.blocks/video/_visible/video_visible.css">
     <!-- Reset -->
     <link rel="stylesheet" href="common.blocks/reset.css">
 
@@ -175,15 +176,15 @@
                         <img class="hike__img" src="assets/img/Rectangle_5-hike-1.png" alt="">
                     </button>
                     <!--* 2-фото -->
-                    <button class="button-video button-video_transf_transl-1" id="openModalBtn">
+                    <button class="button-video button-video_transf_transl-1">
                         <img class="hike__img" src="assets/img/Rectangle_5-hike-2.png" alt="">
                     </button>
 
                     <!-- Отдельное окно для видео -->
-                    <div class="video" id="videoModal">
+                    <div class="video">
                         <div class="video__content">
-                            <span class="button-close" id="closeModalBtn">&times;</span>
-                            <video class="video__el" controls poster="assets/img/Rectangle_5-hike-2.png">
+                            <span class="button-close">&times;</span>
+                            <video class="video__el" id="videoPlayer" controls poster="assets/img/Rectangle_5-hike-2.png">
                                 <source src="assets/video/nature.mp4" type="video/mp4">
                                 Ваш браузер не поддерживает встроенные видео :(
                             </video>
@@ -207,7 +208,8 @@
     </section>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-    <script src="common.blocks/button.blocks/button-video/button-video.js"></script>
+    <!-- Video -->
+    <script src="common.blocks/video/video.js"></script>
 
 </body>
 
