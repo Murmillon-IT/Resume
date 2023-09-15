@@ -1,0 +1,29 @@
+/* opalescent-1 */
+.button_theme_opalescent-1 {
+    background-color: #1A3E3E;
+    color: #FDFDFD;
+    outline: transparent 2px solid;
+    transition: color .1s ease-in-out, outline .1s ease-in-out;
+
+    padding: 12px 24px;
+}
+
+.button_theme_opalescent-1:hover {
+    color: #F2BE22;
+    outline: #F2BE22 2px solid;
+}
+
+/* opalescent-2 */
+.button_theme_opalescent-2 {
+    background-color: #1A3E3E;
+    color: #FDFDFD;
+    border: 0;
+    transition: color .1s ease-in-out, background-color .1s ease-in-out;
+
+    padding: 16px 36px;
+}
+
+.button_theme_opalescent-2:hover {
+    background-color: #F2BE22;
+    color: black;
+}

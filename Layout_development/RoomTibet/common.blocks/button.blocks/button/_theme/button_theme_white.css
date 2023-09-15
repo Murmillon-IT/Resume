@@ -1,0 +1,14 @@
+.button_theme_white-1 {
+    background-color: #FDFDFD;
+    color: #1A3E3E;
+    font-weight: 700;
+    transition: background-color .1s ease-in-out;
+
+    border: 0;
+
+    padding: 16px 36px;
+}
+
+.button_theme_white-1:hover {
+    background-color: #F2BE22;
+}

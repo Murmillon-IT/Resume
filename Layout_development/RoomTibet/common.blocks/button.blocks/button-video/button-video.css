@@ -1,0 +1,36 @@
+.button-video {
+    border-radius: 24px;
+    border: 0;
+    cursor: pointer;
+    outline: transparent 3px solid;
+    transition: outline .1s ease-in-out;
+
+    position: relative;
+}
+
+.button-video:hover {
+    outline: #F2BE22 3px solid;
+    z-index: 1;
+}
+
+.button-video::before {
+    content: '';
+    width: 50px;    /* 1px = 7px img */ /*? width = ширина img/7px */
+    height: 50px;
+    border-radius: 100px;
+    background: rgba(253, 253, 253, 0.60);
+    background-image: url(../../../assets/img/icons/fluent_play-12-filled-hike__btn.svg); /* его size по усмотрению */
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transition: transform .1s ease-in-out;
+    transform: translate(-50%, -50%)
+}
+
+.button-video:hover::before {
+    transform: translate(-50%, -50%) scale(1.25, 1.25);
+}

@@ -1,0 +1,15 @@
+.video__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #000000d1;
+    margin: 10% auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video__content span {
+    align-self: flex-end;
+}
