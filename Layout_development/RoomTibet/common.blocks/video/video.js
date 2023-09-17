@@ -1,46 +1,52 @@
 'use strict'
 
-//Параметры: (кнопка добав-ет мод-р, кнопка удаляет мод-р, к чему доб-ем/удалеям мод-р, модификатор, видеоплеер id из тега video, при клике на элемент удаляет мод-р)
-const videoFunc = (openButtonClass, closeButtonClass, videoModalClass, modClass, videoPlayerId, videoModalContentClass) => {
-    const openModalBtn = document.querySelectorAll(openButtonClass) //кнопка события //todo делает окно видимым
-    const closeModalBtn = document.querySelector(closeButtonClass) //кнопка события //todo делаем окно невидимым
-    const videoModal = document.querySelector(videoModalClass) //модуль окна видео //todo класс к которому добавляем модиф-р
-    const videoPlayer = document.getElementById(videoPlayerId) //получение элемента по ID (видеоплеер)
-    const videoModalContent = document.querySelector(videoModalContentClass)
+const openModalBtn = document.querySelectorAll('.button-video') //кнопка события //todo делает окно видимым
+const closeModalBtn = document.querySelector('.button-close') //кнопка события //todo делаем окно невидимым
+const videoModal = document.querySelector('.video') //модуль окна видео //todo класс к которому добавляем модиф-р
+const videoModalContent = document.querySelector('.video__content')
+const videoPlayer = document.querySelectorAll('.video__el')
+const tagBody = document.querySelector('body') //для фиксации при просмотре видео
 
-    const removeVideoModal = () => videoModal.classList.remove(modClass) //модиф-р который удаляем от videoModal
-    const addVideoModal = () => videoModal.classList.add(modClass) //модиф-р который добавляем к videoModal
+const addModal = (element, modifier) => element.classList.add(modifier) //фун-я добавления модификатора
+const removeModal = (element, modifier) => element.classList.remove(modifier) //фун-я удаления модиф-ра
 
 
-    const openModalBtnArr = (element) => {
-        //Кнопка делает видимым окно и автоматически воспроизводит видео
-        element.addEventListener('click', () => {
-            addVideoModal() //делаем окно видимым
-            if (videoPlayer.tagName === "VIDEO") { //нужен только видеоплеер
-                videoPlayer.play() //воспроизведение видео
-            }
-        })
-    }
+const openModalBtnArr = (element, index) => {
+    //Кнопка делает видимым окно и автоматически воспроизводит видео
+    element.addEventListener('click', () => {
+        addModal(videoModal, 'video_visible') //делаем окно видимым
 
-    openModalBtn.forEach(openModalBtnArr)
+        videoPlayer[index].play() //воспроизводим видео автом-ки
+        videoPlayer[index].classList.add('video__el_visible')
 
-    //Кнопка делает невидимым окно и останавливает видео
-    closeModalBtn.addEventListener('click', () => {
-        removeVideoModal() //делаем окно невидимым
-        if (videoPlayer.tagName === "VIDEO") {
-            videoPlayer.pause() //остановка видео
-        }
-    })
-
-    //При клике вне видео окно становится невидимым и видео останавливается
-    window.addEventListener('click', event => {
-        if (event.target === videoModalContent) {
-            removeVideoModal()
-            if (videoPlayer.tagName === "VIDEO") {
-                videoPlayer.pause()
-            }
-        }
+        tagBody.style.overflow = 'hidden' //фиксируем фон при просмотре видео
     })
 }
 
-videoFunc('.button-video', '.button-close', '.video', 'video_visible', 'videoPlayer', '.video__content')
+openModalBtn.forEach((element, index) => {
+    openModalBtnArr(element, index)
+})
+
+//Кнопка делает невидимым окно и останавливает видео
+closeModalBtn.addEventListener('click', () => {
+    removeModal(videoModal, 'video_visible') //делаем окно невидимым
+    tagBody.style.overflow = 'auto'
+
+    videoPlayer.forEach(element => {
+        element.pause()
+        element.classList.remove('video__el_visible')
+    })
+})
+
+//При клике вне видео окно становится невидимым и видео останавливается
+window.addEventListener('click', event => {
+    if (event.target === videoModalContent) {
+        removeModal(videoModal, 'video_visible')
+        tagBody.style.overflow = 'auto'
+
+        videoPlayer.forEach(element => {
+            element.pause()
+            element.classList.remove('video__el_visible')
+        })
+    }
+})

@@ -1,5 +1,6 @@
 .video__el {
+    display: none;
     max-width: 1500px;
-    
+    width: 100%;
     cursor: pointer;
 }

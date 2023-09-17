@@ -1,0 +1,11 @@
+.offer__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+
+    border-radius: 0px 50px;
+}

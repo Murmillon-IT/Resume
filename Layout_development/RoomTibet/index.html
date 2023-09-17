@@ -14,7 +14,6 @@
 
     <!--! Подключение стилей .css -->
     <!-- Annotation -->
-
     <link rel="stylesheet" href="common.blocks/annotation/annotation.css">
     <!-- Button --> <!--? Button.blocks -->
     <link rel="stylesheet" href="common.blocks/button.blocks/button/button.css">
@@ -40,18 +39,14 @@
     <link rel="stylesheet" href="common.blocks/form.blocks/form-el/_theme/form-el_theme_select.css">
     <link rel="stylesheet" href="common.blocks/form.blocks/form-el/_theme/form-el_theme_data.css">
     <link rel="stylesheet" href="common.blocks/form.blocks/form-el/__option/form-el__option.css">
-    <!-- Form-title -->
-    <link rel="stylesheet" href="common.blocks/form.blocks/form-title/_margin/form-title_margin_bottom.css">
 
     <!-- Header -->
     <link rel="stylesheet" href="common.blocks/header/header.css">
     <link rel="stylesheet" href="common.blocks/header/__link/header__link.css">
-    <link rel="stylesheet" href="common.blocks/header/_margin/header_margin_top.css">
     <!-- Hike -->
     <link rel="stylesheet" href="common.blocks/hike/hike.css">
     <link rel="stylesheet" href="common.blocks/hike/__img/hike__img.css">
     <link rel="stylesheet" href="common.blocks/hike/__video/hike__video.css">
-    <link rel="stylesheet" href="common.blocks/hike/_margin/hike_margin_top.css">
     <!-- Logo -->
     <link rel="stylesheet" href="common.blocks/logo/logo.css">
     <link rel="stylesheet" href="common.blocks/logo/__img/logo__img.css">
@@ -59,9 +54,27 @@
     <link rel="stylesheet" href="common.blocks/nav/nav.css">
     <link rel="stylesheet" href="common.blocks/nav/__link/nav__link.css">
     <link rel="stylesheet" href="common.blocks/nav/__link/_active/nav__link_active.css">
+    <!-- Offer -->
+    <link rel="stylesheet" href="common.blocks/offer/offer.css">
+    <link rel="stylesheet" href="common.blocks/offer/__element/offer__element.css">
+    <link rel="stylesheet" href="common.blocks/offer/__item/offer__item.css">
+    <link rel="stylesheet" href="common.blocks/offer/__icon/offer__icon.css">
+    <link rel="stylesheet" href="common.blocks/offer/__text/offer__text.css">
+    <link rel="stylesheet" href="common.blocks/offer/__title/offer__title.css">
+    <link rel="stylesheet" href="common.blocks/offer/__pictures/offer__pictures.css">
+    <link rel="stylesheet" href="common.blocks/offer/__img/offer__img.css">
+    <link rel="stylesheet" href="common.blocks/offer/__img/_border-radius/offer__img_border-radius.css">
+    <link rel="stylesheet" href="common.blocks/offer/__img-el/offer__img-el.css">
+    <link rel="stylesheet" href="common.blocks/offer/__img-el/_setting/offer__img-el_setting.css">
+    <link rel="stylesheet" href="common.blocks/offer/__images/offer__images.css">
+    <link rel="stylesheet" href="common.blocks/offer/__icon/_theme/offer__icon_theme_people.css">
+    <link rel="stylesheet" href="common.blocks/offer/__icon/_theme/offer__icon_theme_price.css">
+    <link rel="stylesheet" href="common.blocks/offer/__icon/_theme/offer__icon_theme_shield.css">
     <!-- Section -->
     <link rel="stylesheet" href="common.blocks/section/section.css">
     <link rel="stylesheet" href="common.blocks/section/_background/section_background_intro.css">
+    <link rel="stylesheet" href="common.blocks/section/_background/section_background_color.css">
+    <link rel="stylesheet" href="common.blocks/section/_padding/section_padding.css">
     <!-- Text -->
     <link rel="stylesheet" href="common.blocks/text/text.css">
     <link rel="stylesheet" href="common.blocks/text/_margin/text_margin_bottom.css">
@@ -81,17 +94,18 @@
     <link rel="stylesheet" href="common.blocks/video/__content/video__content.css">
     <link rel="stylesheet" href="common.blocks/video/__el/video__el.css">
     <link rel="stylesheet" href="common.blocks/video/_visible/video_visible.css">
+    <link rel="stylesheet" href="common.blocks/video/__el/_visible/video__el_visible.css">
     <!-- Reset -->
     <link rel="stylesheet" href="common.blocks/reset.css">
 
 </head>
 
 <body>
-    <section class="section section_background_intro">
-        <div class="container container_flex_colum-space-b">
+    <section class="section section_background_intro section_padding-1">
+        <div class="container container_flex_colum-1">
 
             <!--? Шапка сайта -->
-            <header class="header header_margin_top-16px">
+            <header class="header">
                 <!-- Логотип -->
                 <div class="logo">
                     <a href="" class="logo__link">
@@ -113,7 +127,7 @@
             </header>
 
             <!--? Форма заполнения для похода -->
-            <div class="form-title form-title_margin_bottom-82px">
+            <div class="form-title">
                 <h1 class="h1-title h1-title_margin_bottom-41px">Насладись прогулкой в горах<br> с командой единомышленников</h1>
                 <!-- Форма -->
                 <form action="" class="form" id="form" name="form">
@@ -164,11 +178,11 @@
         </div> <!-- container -->
     </section>
 
-    <section class="section">
+    <section class="section section_padding-2">
         <div class="container">
 
             <!--? О нашем походе -->
-            <div class="hike hike_margin_top-100px">
+            <div class="hike">
                 <!-- Видео контент -->
                 <div class="hike__video">
                     <!--* 1-фото -->
@@ -184,7 +198,12 @@
                     <div class="video">
                         <div class="video__content">
                             <span class="button-close">&times;</span>
-                            <video class="video__el" id="videoPlayer" controls poster="assets/img/Rectangle_5-hike-2.png">
+                            <video class="video__el" controls poster="assets/img/Rectangle_5-hike-1.png">
+                                <source src="assets/video/mountains.mp4" type="video/mp4">
+                                Ваш браузер не поддерживает встроенные видео :(
+                            </video>
+
+                            <video class="video__el" controls poster="assets/img/Rectangle_5-hike-2.png">
                                 <source src="assets/video/nature.mp4" type="video/mp4">
                                 Ваш браузер не поддерживает встроенные видео :(
                             </video>
@@ -206,11 +225,71 @@
 
         </div> <!-- container -->
     </section>
+
+    <section class="section section_background_color-1 section_padding-3">
+        <div class="container">
+
+            <!--? Наше предложение -->
+            <div class="offer">
+                <div class="annotation">
+                    <h4 class="sup-title sup-title_margin_bottom-8px">наше предложение</h4>
+                    <h3 class="h3-title h3-title_margin_bottom-40px">Лучшие программы для тебя</h3>
+                    <p class="text text_margin_bottom-40px">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа.</p>
+                    <div class="offer__inner">
+                        <div class="offer__item">
+                            <img src="assets/img/icons/offer/frame-offer.svg" alt="" class="offer__icon offer__icon_theme_people">
+                            <div class="offer__element">
+                                <h5 class="offer__title">Опытный гид</h5>
+                                <p class="offer__text">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                            </div>
+                        </div>
+                        <div class="offer__item">
+                            <img src="assets/img/icons/offer/Frame-shield-offer.svg" alt="" class="offer__icon offer__icon_theme_shield">
+                            <div class="offer__element">
+                                <h5 class="offer__title">Безопасный поход</h5>
+                                <p class="offer__text">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                            </div>
+                        </div>
+                        <div class="offer__item">
+                            <img src="assets/img/icons/offer/Frame-price-offer.svg" alt="" class="offer__icon offer__icon_theme_price">
+                            <div class="offer__element">
+                                <h5 class="offer__title">Лояльные цены</h5>
+                                <p class="offer__text">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="button button_theme_opalescent-2">Стоимость программ</button>
+                </div>
+
+                <div class="offer__pictures">
+                    <div class="offer__images">
+                        <div class="offer__img">
+                            <img src="assets/img/offer/offer-img-tea-min.jpg" alt="" class="offer__img-el">
+                        </div>
+                        <div class="offer__img offer__img_border-radius">
+                            <img src="assets/img/offer/offer-img-canyon-min.jpg" alt="" class="offer__img-el">
+                        </div>
+                    </div>
+                    <div class="offer__images">
+                        <div class="offer__img offer__img_border-radius">
+                            <img src="assets/img/offer/offer-img-winter-min.jpg" alt="" class="offer__img-el">
+                        </div>
+                        <div class="offer__img offer__img_setting-2">
+                            <img src="assets/img/offer/offer-img-mountain-min.jpg" alt="" class="offer__img-el offer__img-el_setting">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+
+
+
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <!-- Video -->
     <script src="common.blocks/video/video.js"></script>
-
 </body>
 
 </html>

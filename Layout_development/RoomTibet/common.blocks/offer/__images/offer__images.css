@@ -1,0 +1,6 @@
+.offer__images {
+    display: flex;
+    justify-content: space-between;
+
+    width: 510px;
+}
