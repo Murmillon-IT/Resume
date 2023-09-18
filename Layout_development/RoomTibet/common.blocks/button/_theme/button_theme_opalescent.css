@@ -2,6 +2,7 @@
 .button_theme_opalescent-1 {
     background-color: #1A3E3E;
     color: #FDFDFD;
+    border: 0;
     outline: transparent 2px solid;
     transition: color .1s ease-in-out, outline .1s ease-in-out;
 
@@ -26,4 +27,21 @@
 .button_theme_opalescent-2:hover {
     background-color: #F2BE22;
     color: black;
+}
+
+/* opalescent-3 */
+.button_theme_opalescent-3 {
+    background-color: #1A3E3E;
+    color: #FDFDFD;
+    border: 0;
+    outline: transparent 1px solid;
+    transition: color .1s ease-in-out, outline .1s ease-in-out, background-color .1s ease-in-out;
+
+    padding: 12px 24px;
+}
+
+.button_theme_opalescent-3:hover {
+    color: #1A3E3E;
+    background-color: #FDFDFD;
+    outline: #1A3E3E 1px solid;
 }

@@ -19,7 +19,7 @@
     height: 50px;
     border-radius: 100px;
     background: rgba(253, 253, 253, 0.60);
-    background-image: url(../../../assets/img/icons/fluent_play-12-filled-hike__btn.svg); /* его size по усмотрению */
+    background-image: url(../../assets/img/icons/fluent_play-12-filled-hike__btn.svg); /* его size по усмотрению */
     background-repeat: no-repeat;
     background-position: center center;
 

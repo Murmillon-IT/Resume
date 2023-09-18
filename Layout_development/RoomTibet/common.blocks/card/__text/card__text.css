@@ -1,0 +1,17 @@
+.card__text {
+    color: #FDFDFD;
+    border-radius: 10px;
+    background-color: #00000090;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+    overflow: hidden;
+
+    margin-bottom: 45px;
+    padding: 10px;
+
+    height: 235px;
+}

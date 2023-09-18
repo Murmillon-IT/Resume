@@ -1,0 +1,17 @@
+.card__info {
+
+    padding: 20px 32px 35px;
+
+    border-radius: 0 0 32px 32px;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(3px);
+
+    transition: transform .3s ease-in-out, padding-top .3s ease-in-out, border-radius .3s ease-in-out;
+    transition-delay: .1s;
+    transform: translateY(410px);
+}
+
+.card:hover .card__info {
+    transform: translateY(30px);
+    padding-top: 30px;
+}

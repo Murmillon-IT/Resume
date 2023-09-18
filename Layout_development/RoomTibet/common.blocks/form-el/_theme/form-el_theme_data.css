@@ -40,12 +40,12 @@
 } */
 
 .form-el_theme_data-1::-webkit-calendar-picker-indicator {
-    background-image: url(../../../../assets/img/icons/formkit_date-form-el-white.svg);
+    background-image: url(../../../assets/img/icons/formkit_date-form-el-white.svg);
     cursor: pointer;
 
     transition: background-image .1s ease-out;
 }
 
 .form-el_theme_data-1::-webkit-calendar-picker-indicator:hover {
-    background-image: url(../../../../assets/img/icons/formkit_date-form-el-yellow.svg);
+    background-image: url(../../../assets/img/icons/formkit_date-form-el-yellow.svg);
 }
