@@ -1,4 +1,5 @@
 .button {
+    display: inline-block;
     border-radius: 4px;
 
     font-family: Nunito Sans;
