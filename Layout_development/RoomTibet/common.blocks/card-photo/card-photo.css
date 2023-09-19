@@ -1,0 +1,31 @@
+.card-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 250px;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.card-photo::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.459);
+    background-image: url(../../assets/img/icons/photo/iconamoon_zoom-in-light-photo.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity .1s ease-in-out;
+
+    position: absolute;
+}
+
+.card-photo:hover::before {
+    opacity: 1;
+}
