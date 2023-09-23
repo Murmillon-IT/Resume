@@ -1,0 +1,7 @@
+.footer__network-link {
+    margin-right: 16px;
+}
+
+.footer__network-link:last-child {
+    margin-right: 0;
+}

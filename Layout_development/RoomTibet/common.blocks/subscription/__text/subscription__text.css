@@ -1,0 +1,16 @@
+.subscription__text {
+    color: #18121E;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+
+    max-width: 536px;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.subscription__text a:hover {
+    color: #F2BE22;
+}

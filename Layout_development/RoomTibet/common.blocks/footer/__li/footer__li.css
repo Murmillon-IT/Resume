@@ -1,0 +1,12 @@
+.footer__li {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    align-items: center;
+
+    margin-bottom: 16px;
+}
+
+.footer__li:last-child {
+    margin-bottom: 0;
+}

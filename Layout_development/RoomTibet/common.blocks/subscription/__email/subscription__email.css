@@ -1,0 +1,17 @@
+.subscription__email {
+    width: 280px;
+    height: 44px;
+    padding: 0px 16px;
+    margin-right: 16px;
+    align-items: center;
+
+    border: 0;
+    border-radius: 4px;
+    background: #F3F5F4;
+    outline: transparent 1px solid;
+    transition: outline .1s linear;
+}
+
+.subscription__email:focus {
+    outline: #1A3E3E 1px solid;
+}

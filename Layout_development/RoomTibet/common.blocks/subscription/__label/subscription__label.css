@@ -1,0 +1,11 @@
+.subscription__label {
+    display: block;
+    margin-bottom: 8px;
+
+    color: #18121E;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
