@@ -9,7 +9,7 @@ function calculateSHA3_256(filePath) {
     return new Promise((resolve, reject) => {
         input.on('data', (chunk) => {
             hash.update(chunk);
-        });
+        }); 
 
         input.on('end', () => {
             const sha3_256Hash = hash.digest('hex');
